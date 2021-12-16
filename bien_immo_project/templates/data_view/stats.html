@@ -1,0 +1,33 @@
+{%extends "layout.html"%}
+
+{%block first-result%}
+<div class="number-std">
+    <div class="first-result">
+        <b>Nombre de biens</b>
+        <p>{{number}}</p>
+    </div>
+    <div class="first-result">
+        <b>Ecart-type</b>
+        <p>{{std}}</p>
+    </div>
+</div>
+{% endblock %}
+
+{%block container %}
+<table class="results">
+  <thead>
+      {% for column in columns %}
+      <th>{{column}}</th>
+      {% endfor %}
+  </thead>
+  {% for row in data %}
+  <tr>
+      {%for value in row %}
+      <td>
+          <div>{{value}}</div>
+      </td>
+      {% endfor %}
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Promoteur Immo</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+  <body>
+        <div class="header-block">
+            <header class = "fixed">
+                <a href="/">
+                    <h1>Biens immobiliers</h1>
+                </a>
+                <form class="login" action="/login" method="post">
+                    {% csrf_token %}
+                    <input type="username" placeholder="Username" name="username" required/>
+                    <input type="password" placeholder="Password" name="password" required/>
+                    <input type="submit" href="/login" name="submit"/>
+                </form>
+            </header>
+        </div>
+        <div class="header-block">
+            <header>
+                <h1>TEST</h1>
+            </header>
+        </div>
+        <div class="main-block">
+            <div class="result-wrapper">
+                {% block first-result %}
+                {% endblock %}
+                <div class="container">
+                    {% block container %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+  </body>
+</html>

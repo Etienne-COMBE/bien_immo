@@ -1,0 +1,25 @@
+DROP TABLE IF EXISTS bien;
+CREATE TABLE IF NOT EXISTS bien(
+    id_lot text,
+    nb_piece text,
+    typologie text,
+    prix_tva_reduite decimal,
+    prix_tva_normale decimal,
+    prix_HT decimal,
+    prix_m2_HT decimal,
+    prix_m2_TTC decimal,
+    surface decimal,
+    etage text,
+    orientation text,
+    exterieur boolean,
+    balcony boolean,
+    garden boolean,
+    parking boolean,
+    nom_programme text,
+    ville text,
+    departement decimal,
+    date_fin_programme text,
+    adresse_entiere text,
+    promoteur text,
+    date_extraction date
+);
