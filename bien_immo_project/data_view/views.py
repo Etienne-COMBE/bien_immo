@@ -56,6 +56,7 @@ def sql_query(connection):
 # Create your views here.
 def stats(request):
     connection = connect_db()
+    message = request.GET.get('message')
     if request.method == 'POST':
         file = request.FILES["csv_file"]
         df_og = pd.read_csv(file, sep = ",").iloc[:, 1:]
@@ -63,4 +64,4 @@ def stats(request):
         connection = import_to_sql(df_og, connection)
     result, number_std, connection = sql_query(connection)
     connection.close()
-    return render(request, "data_view/stats.html", {"columns": ['Ville', "Prix moyen", "Ecart type"], "data": result, "number": number_std[0], "std": number_std[1]})
+    return render(request, "data_view/stats.html", {"columns": ['Ville', "Prix moyen", "Ecart type"], "data": result, "number": number_std[0], "std": number_std[1], "message": message})

@@ -26,14 +26,13 @@ b {
 .container, .first-result{
     text-align: center;
     margin: 25px;
-    background: #f5f5f5; 
+    /*background: #f5f5f5;*/ 
 }
 header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #2371a0;
     width: 100%;
-    color: white;
 }
 header h1{
     text-align: center;
@@ -43,6 +42,9 @@ header h1{
 }
 .fixed{
     position: fixed;
+}
+.upload-form{
+    background: #f5f5f5;
 }
 form{
     padding:25px;
@@ -92,6 +94,9 @@ tr:nth-child(even){
 tr:hover{
     background-color: #dde;
 }
+.index-h1{
+    background: #f5f5f5;
+}
 h1{
     padding: 20px;
     margin:0;
@@ -103,9 +108,19 @@ a{
 p{
     margin:0;
     padding: 10px;
+    background: #f5f5f5;
 }
 .number-std{
     width: 100%;
     display:grid;
     grid-template-columns: 1fr 1fr;
+}
+.login-exception{
+    color: goldenrod;
+    border-radius: 3px;
+    font-size: 15px;
+}
+input{
+    margin: 5px;
+    white-space: nowrap;
 }
