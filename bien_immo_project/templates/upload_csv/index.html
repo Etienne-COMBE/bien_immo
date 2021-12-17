@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block container %}
+<b>Load a CSV file</b>
+<form class="upload-form" action="/stats/" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+  <input id="file-upload" type="file" name="csv_file" accept=".csv" required></input>
+  <input class="submit" type="submit"></button>
+</form>
+{% endblock %}

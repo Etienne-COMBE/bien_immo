@@ -1,0 +1,126 @@
+html, body {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 18px;
+    color: #666;
+}
+b {
+    margin: 0;
+    background-color: #1c87c9;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display:block;
+}
+.main-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #212121;
+}
+.container, .first-result{
+    text-align: center;
+    margin: 25px;
+    /*background: #f5f5f5;*/ 
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #2371a0;
+    width: 100%;
+}
+header h1{
+    text-align: center;
+}
+.login{
+    margin:0;
+}
+.fixed{
+    position: fixed;
+}
+.upload-form{
+    background: #f5f5f5;
+}
+form{
+    padding:25px;
+}
+.submit {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: #1c87c9; 
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.submit:hover {
+    background: #2371a0;
+}
+#file-upload{
+    width: calc(100% - 20px);
+    font-size: 18px;
+    padding: 10px;
+    background-color: #ddd;
+}
+.results {
+    width:100%;
+    margin:0;
+    background: #f5f5f5;
+    text-align: center;
+    border-collapse: collapse;
+}
+td{
+    padding:10px;
+}
+th{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #1c87c9;
+    color: #fff;
+}
+tr{
+        width: 100%;
+}
+tr:nth-child(even){
+    background-color: #e2e2e2;
+}
+tr:hover{
+    background-color: #dde;
+}
+.index-h1{
+    background: #f5f5f5;
+}
+h1{
+    padding: 20px;
+    margin:0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+p{
+    margin:0;
+    padding: 10px;
+    background: #f5f5f5;
+}
+.number-std{
+    width: 100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.login-exception{
+    color: goldenrod;
+    border-radius: 3px;
+    font-size: 15px;
+}
+input{
+    margin: 5px;
+    white-space: nowrap;
+}
